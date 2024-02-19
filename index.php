@@ -1,4 +1,4 @@
-<?php
+
 //////////////////////////////
 // Commenting
 /////////////////////////////
@@ -60,13 +60,43 @@ $name = 'John';*/
 // var_dump(is_numeric($x));
 
 // Cast float to int
-$x = 23465.768;
-$int_cast = (int)$x;
-echo $int_cast;
+// $x = 23465.768;
+// $int_cast = (int)$x;
+// echo $int_cast;
 
-echo "<br>";
+// echo "<br>";
 
 // Cast string to int
-$x = "23465.768";
-$int_cast = (int)$x;
-echo $int_cast;
+// $x = "23465.768";
+// $int_cast = (int)$x;
+// echo $int_cast;
+
+// echo readfile("file.txt");
+
+// $myfile = fopen("newfile.txt", "a") or die("Unable to open file!");
+// $txt = "Donald Duck\n";
+// fwrite($myfile, $txt);
+// $txt = "Goofy Goof\n";
+// fwrite($myfile, $txt);
+// fclose($myfile);
+// echo readfile("newfile.txt");
+
+<html>
+<body>
+
+<form action="index.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+<html>
+<body>
+
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
+
+</body>
+</html>
